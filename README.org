@@ -2,3 +2,47 @@
 
 SuperCollider app to support experiments with intonation in performance of Györgi Ligeti's Hora Lunga for solo Viola.  Part of the PhD Thesis of Eleftheria Togia at TMS of IU. 
 
+* Instructions
+
+** Installation
+
+1. Download the library and unzip it.
+2. Drag the library folder to your SuperCollider extensions folder.
+3. Start SuperCollider, or recompile the supercollider library.
+
+** Background
+
+Pitches to monitor and to support for intonation: 
+
+|---+--------+---------+----------+-------+------+-----------+----------+----------|
+| ! | Octave | Note    | notemidi | Cents | Root | Root MIDI | Harmonic | MIDIdiff |
+|---+--------+---------+----------+-------+------+-----------+----------+----------|
+| # |      3 | B       |       59 |   -49 | F    |        17 |       11 |       42 |
+| # |      3 | B flat  |       58 |   -31 | C    |        24 |        7 |       34 |
+| # |      3 | A       |       57 |   -14 | F    |        29 |        5 |       28 |
+| # |      4 | E       |       64 |   -14 | C    |        36 |        5 |       28 |
+| # |      4 | E flat  |       63 |   -31 | F    |        29 |        7 |       34 |
+| # |      4 | F sharp |       66 |   -14 | D    |        38 |        5 |       28 |
+| # |      4 | F sharp |       66 |   -49 | C    |        24 |       11 |       42 |
+|---+--------+---------+----------+-------+------+-----------+----------+----------|
+#+TBLFM: $7=$notemidi - $MIDIdiff
+
+Reference for calculating MIDI from octave number: 
+
+| C5 | 60 |
+
+
+** Usage
+
+To start tenutas for practicing, evaluate this in a SuperCollider workspace: 
+
+#+BEGIN_SRC sclang
+HoraLunga.tenutas
+#+END_SRC
+
+To start resonances for practicing, evaluate this in SuperCollider workspace:
+
+#+BEGIN_SRC sclang
+HoraLunga.resonance
+#+END_SRC
+
