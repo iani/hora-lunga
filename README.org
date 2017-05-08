@@ -1,0 +1,4 @@
+#+DATE: <2017-05-08 Mon>
+
+SuperCollider app to support experiments with intonation in performance of Györgi Ligeti's Hora Lunga for solo Viola.  Part of the PhD Thesis of Eleftheria Togia at TMS of IU. 
+
