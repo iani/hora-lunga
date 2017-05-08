@@ -7,7 +7,7 @@ SuperCollider app to support experiments with intonation in performance of Györ
 ** Installation
 
 1. Download the library and unzip it.
-2. Drag the library folder to your SuperCollider extensions folder.
+2. Drag the library folder to your SuperCollider extensions folder.  Note: The Extensions folder should be inside your SuperCollider UserAppSupportDir.  To open the UserAppSupportDir from your SuperCollider Application, choose Menu =File=, submenu =Open user support directory=.
 3. Start SuperCollider, or recompile the supercollider library.
 
 ** Background
